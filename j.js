@@ -143,8 +143,6 @@ const typed = new Typed('#typed-text', {
             }
         });
     }
-
-
 });
 
 // Set initial image
