@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Enhancement - Complete Setup Guide
 
 ## Overview
@@ -155,3 +156,7 @@ When everything is working correctly, you should see:
 - ✅ Responsive layout on all devices
 
 Your portfolio is now fully functional with a modern, professional design! 🚀
+=======
+# My-Portfolio-Website
+This project is a Data Science Portfolio Website developed using HTML, CSS, JavaScript, and Flask. It highlights my work in Machine Learning, Artificial Intelligence, and Data Analytics, featuring interactive project showcases, visualizations, and certification sections. The Flask backend handles routing, contact form integration.
+>>>>>>> c7a16d5d1aeb7c51c5c549b8ec12a541a6d2b5a7
