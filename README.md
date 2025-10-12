@@ -1,5 +1,6 @@
-## My-Portfolio-Website
-# Portfolio Enhancement - Complete Setup Guide
+# My-Portfolio-Website
+
+## Portfolio Enhancement - Complete Setup Guide
 
 ## Overview
 This portfolio has been enhanced with comprehensive improvements:
