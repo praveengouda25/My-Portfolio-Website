@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Kumar - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='s.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="javascript:void(0)" onclick="window.location.reload()" class="logo-text">Praveen Kumar</a>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-links">Home</a>
+                <a href="#about" class="nav-links">About</a>
+                <a href="#skills" class="nav-links">Skills</a>
+                <a href="#projects" class="nav-links">Projects</a>
+                <a href="#experience" class="nav-links">Experience</a>
+                <a href="#certificates" class="nav-links">Certificates</a>
+                <a href="#contact" class="contact-button">Contact Me</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <span class="toggle-circle"></span>
+            </button>
+
+            <button class="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="mobile-nav">
+                <a href="#home" class="nav-links">Home</a>
+                <a href="#about" class="nav-links">About</a>
+                <a href="#skills" class="nav-links">Skills</a>
+                <a href="#projects" class="nav-links">Projects</a>
+                <a href="#experience" class="nav-links">Experience</a>
+                <a href="#certificates" class="nav-links">Certificates</a>
+                <a href="#contact" class="nav-links">Contact Me</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="home" class="main-section">
+        <div class="content-left" data-aos="fade-right">
+            <h3 class="section-label">Hi There,</h3>
+            <h1 class="section-title">I'm Praveen Kumar</h1>
+            <h2 class="section-description"><span id="typed-text"></span></h2>
+            <p class="section-description">
+                 AI, Data Science, and Data Analyst enthusiast passionate about solving real-world 
+                 and business challenges using Machine Learning, Deep Learning, and modern web technologies.
+                 
+            </p>
+        </div>
+        <div class="content-right">
+            <div class="image-slider">
+                <img src="{{ url_for('static', filename='images/ai.jpg') }}" class="slider-image" data-domain="AI Engineer" alt="AI Engineer">
+                <img src="{{ url_for('static', filename='images/ds.png') }}" class="slider-image" data-domain="Data Scientist" alt="Data Scientist">
+                <img src="{{ url_for('static', filename='images/powerbi_img.jpeg') }}" class="slider-image" data-domain="Power-BI Analyst" alt="Power-BI Analyst">
+                <img src="{{ url_for('static', filename='images/ds.jpg') }}" class="slider-image" data-domain="Data Analyst" alt="Data Analyst">
+                <img src="{{ url_for('static', filename='images/prompteng.png') }}" class="slider-image" data-domain="Prompt Engineer" alt="Prompt Engineer">
+                <img src="{{ url_for('static', filename='images/db.jpg') }}" class="slider-image" data-domain="Database Engineer" alt="Database Engineer">
+                <img src="{{ url_for('static', filename='images/ml.png') }}" class="slider-image" data-domain="Machine Learning Engineer" alt="Machine Learning Engineer">
+                <img src="{{ url_for('static', filename='images/deepl.jpg') }}" class="slider-image" data-domain="Deep Learning Engineer" alt="Deep Learning Engineer">
+                <img src="{{ url_for('static', filename='images/genai.png') }}" class="slider-image" data-domain="Gen AI Engineer" alt="Gen AI Engineer">
+                <img src="{{ url_for('static', filename='images/sw eng.jpg') }}" class="slider-image" data-domain="Web Developer" alt="Web Developer">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="About-container">
+        <h2 class="About-title" data-aos="fade-up">About Me</h2>
+        <div class="About-grid">
+            <div class="About-card education-timeline" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="education-title">Education</h3>
+                
+                <div class="education-item">
+                    <h4 class="education-title">Intermediate</h4>
+                    <p class="education-details">Completed Intermediate at Nandi Pu College in Bellari, Karnataka
+                        specializing in Mathematics, Physics, and Chemistry in 2022.</p>
+                </div>
+                <div class="education-item">
+                    <h4 class="education-title">Engineering</h4>
+                    <p class="education-details">Bachelor of Engineering in Computer Science and Engineering(2022-2026) from
+                        Bangalore Technological Institute, Bangalore. CGPA:8.23/10, Visvesvaraya Technological University(CSE).</p>
+                </div>
+            </div>
+            <div class="About-card dashboard" data-aos="fade-up" data-aos-delay="150">
+                <div class="dashboard-grid">
+                    <div class="dashboard-item">
+                        <div class="dashboard-value">10+</div>
+                        <div class="dashboard-label">Projects Completed</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="dashboard-value">8.23</div>
+                        <div class="dashboard-label">CGPA(AI&DS)</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="dashboard-value">2</div>
+                        <div class="dashboard-label">Internships</div>
+                    </div>
+                    <div class="dashboard-item blogs">
+                        <div class="dashboard-value">1</div>
+                        <div class="dashboard-label">Technical Blogs Published</div>
+                    </div>
+                    <div class="dashboard-item certificate">
+                        <div class="dashboard-value">6</div>
+                        <div class="dashboard-label">Certifications</div>
+                    </div>
+                </div>
+                <div class="description dashboard-item">
+                    I specialize in Data Science, Machine Learning, Data Analytics, Power BI, and Generative AI, 
+                    with hands-on experience in developing and deploying models into interactive web applications 
+                    using Streamlit and Flask
+                    Alongside building scalable AI-driven solutions, I’ve practiced problem-solving through DSA and
+                    SQL challenges across LeetCode, HackerRank, and TUF.
+                    Combining analytical depth with development expertise, I enjoy creating intelligent systems that
+                    solve real-world problems.
+
+                </div>
+
+            </div>
+            <div class="About-card social-links" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://www.linkedin.com/in/praveen-kumar-bcc2525/" target="_blank"
+                    class="links-logo"><img src="{{ url_for('static', filename='logo/icons8-linkedin.svg') }}" alt="LinkedIn" class="About-avatar"><span
+                        class="social-name">LinkedIn</span></a>
+                <a href="mailto:praveengoudru25@gmail.com" target="_blank" class="links-logo"><img
+                        src="{{ url_for('static', filename='logo/icons8-gmail.svg') }}" alt="Gmail" class="About-avatar"><span
+                        class="social-name">Gmail</span></a>
+                <a href="https://github.com/praveengouda25" target="_blank" class="links-logo"><img
+                        src="{{ url_for('static', filename='logo/icons8-github.svg') }}" alt="GitHub" class="About-avatar"><span
+                        class="social-name">GitHub</span></a>
+                <a href="https://www.instagram.com/praveeng_25?igsh=dHpobm05cTdzMG9p" target="_blank"
+                    class="links-logo"><img src="{{ url_for('static', filename='logo/icons8-instagram-94.png') }}" alt="Instagram"
+                        class="About-avatar"><span class="social-name">Instagram</span></a>
+                <a href="https://drive.google.com/file/d/1PtbGmvwlKKUZ3IC0PsVPc6WXP1HX7bjx/view?usp=drive_link"
+                    target="_blank" class="links-logo"><img src="{{ url_for('static', filename='logo/icons8-resume-64.png') }}" alt="Resume"
+                        class="About-avatar"><span class="social-name">Resume</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-container" data-aos="fade-up">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-html-5.svg') }}" class="svg-img"><span
+                    class="logo-txt">HTML</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-css3.svg') }}" class="svg-img"><span class="logo-txt">CSS</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-javascript.svg') }}" class="svg-img"><span
+                    class="logo-txt">JavaScript</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-github.svg') }}" class="svg-img"><span
+                    class="logo-txt">GitHub</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-python.svg') }}" class="svg-img"><span
+                    class="logo-txt">Python</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-numpy.svg') }}" class="svg-img"><span class="logo-txt">Numpy</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-pandas.svg') }}" class="svg-img"><span class="logo-txt">Pandas</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/matplotlib.png') }}" class="svg-img"><span class="logo-txt">Matplolib</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/statistics_01.jpg') }}" class="svg-img"><span class="logo-txt">Statistics</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/hypothesis_test.jpg') }}" class="svg-img"><span class="logo-txt">Hypothesis Testing</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/data visualize.jpg') }}" class="svg-img"><span class="logo-txt">Data visualization</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/eda_01_logo.png') }}" class="svg-img"><span class="logo-txt">EDA</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/scikit-learn.svg') }}" class="svg-img"><span class="logo-txt">Sk-Learn</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/ml_svg.png') }}" class="svg-img"><span class="logo-txt">Machine Learning</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/TimeSeries.jpg') }}" class="svg-img"><span class="logo-txt">TimeSeries Forecaste</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/postsql_logo.png') }}" class="svg-img"><span
+                    class="logo-txt">PostgreSQL</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/excel_logo.png') }}" class="svg-img"><span class="logo-txt">Excel</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/power_bi_01.jpeg') }}" class="svg-img"><span class="logo-txt">Power BI</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/dl_logo.png') }}" class="svg-img"><span
+                    class="logo-txt">Deep Learning</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/tensorflow.png') }}" class="svg-img"><span
+                    class="logo-txt">Tensorflow</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/keras.png') }}" class="svg-img"><span
+                    class="logo-txt">Keras</span></div>
+           
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/flask_logo.png') }}" class="svg-img"><span
+                    class="logo-txt">Flask</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/streamlit_logo.jpeg') }}" class="svg-img"><span
+                    class="logo-txt">Streamlit</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/Langchain--Streamline-Simple-Icons.svg') }}" class="svg-img"><span
+                    class="logo-txt">Langchain</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-gemini-ai-48.png') }}" class="svg-img"><span
+                    class="logo-txt">Gemini</span>
+            </div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/icons8-aws-48.png') }}" class="svg-img"><span class="logo-txt">AWS</span>
+            </div>            
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/elasticcloud.svg') }}" class="svg-img"><span class="logo-txt">Elastic
+                    Cloud</span></div>
+            <div class="skills-logo"><img src="{{ url_for('static', filename='logo/Fastapi-Icon--Streamline-Svg-Logos.svg') }}" class="svg-img"><span
+                    class="logo-txt">Fast API</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="Project-conatiner">
+        <h2 class="Project-title-h">Projects</h2>
+        <div class="Project-grid">
+            <div class="Project-card" data-aos="fade-up">
+                <div class="icon-container"><img src="{{ url_for('static', filename='logo/crop_recc_icon.jpg') }}" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Machine Learning Powered Crop Recommendation
+                    </h3>
+                    <p class="Project-description">Machine Learning Powered Crop Recommendation System using
+                                               Python, Flask and Scikit-learn for intelligent crop prediction.
+                                               Suggests the most suitable crop based on soil nutrients and
+                                                environmental conditions to enhance agricultural productivity.
+                                            </p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                        data-aim="Develop an intelligent system to recommend the most suitable crop based on soil and environmental parameters using machine learning techniques."
+                        data-existing="Traditional farming decisions are based on experience or assumptions, often leading to poor crop yield and inefficient resource use."
+                        data-proposed="A machine learning-based system built with Flask and Scikit-learn that analyzes soil nutrients and climatic conditions to predict the optimal crop for cultivation."
+                        data-tools="Python, Flask, Scikit-learn, Pandas, NumPy, HTML, CSS">Details</button>
+                        <a href="https://crop-recommendations-system-ml.onrender.com" target="_blank"
+                            class="project-link">Demo</a>
+                        <a href="https://github.com/praveengouda25/Machine_Learning_Powered_Crop_Recommendation.git" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-container"><img src="{{ url_for('static', filename='logo/financial_analysis_icon.png') }}" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Automated Financial Analysis</h3>
+                    <p class="Project-description">
+                        Automated financial analysis platform that automates the calculation of sophisticated financial
+                        metrics This project integrates real-time financial data  An interactive Streamlit dashboard 
+                        provides users with a seamless interface to visualize.</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                        data-aim="Develop an AI-based financial analysis tool that automates the calculation of key financial metrics and provides real-time insights."
+                        data-existing="Traditional financial analysis requires manual calculations and lacks AI-driven validation, leading to inefficiencies and potential errors."
+                        data-proposed="Automated Financial Analysis Tool: An AI-powered system that calculates metrics like WACC, NPV, and ROI, validates results using ML models, and visualizes data through an interactive Streamlit dashboard."
+                        data-tools="Python, numpy, pandas, openpyxl, Streamlit, Machine Learning, Financial metrics"
+                        >Details</button>
+                        
+                        <a href="https://github.com/praveengouda25/Automated_Financial_Analysis.git" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-container"><img src="{{ url_for('static', filename='logo/churn_icon.jpg') }}" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Telecom Customer Churn Prediction</h3>
+                    <p class="Project-description">Customer churn refers to in the telecom industry, churn rates can be as high as 15–25% annually due to intense 
+                               competition, Retaining existing customers is more cost-effective than acquiring new ones. 
+                                Machine Learning helps by identifying at-risk customers.</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                        data-aim="Develop a machine learning model to predict customer churn in the telecom industry by analyzing customer behavior and usage patterns."
+                        data-existing="Telecom companies face high annual churn rates due to competition, and manually identifying at-risk customers is time-consuming and inaccurate."
+                        data-proposed="An AI-based customer churn prediction system that uses historical customer data to identify at-risk users and help telecom companies implement targeted retention strategies."
+                        data-tools="Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn."
+                        >Details</button>
+                        <a href="https://github.com/praveengouda25/Telecom_Customer_Churn_Prediction.git" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-container"><img src="{{ url_for('static', filename='logo/hr_analytics_icon.jpg') }}" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">HR Analytics Dashboard
+                    </h3>
+                    <p class="Project-description">HR teams often struggle to track employee trends and predict attrition, 
+                        This project provides an HR Analytics Dashboard built in Power BI to analyze
+                         employee attrition trends and that help HR departments make data-driven decisions.</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                        data-aim="Develop an HR Analytics Dashboard in Power BI to monitor and analyze employee attrition trends."
+                        data-existing="Organizations face challenges due to employee attrition, including talent loss, increased recruitment costs, and decreased productivity."
+                        data-proposed="An interactive dashboard that visualizes attrition rates by demographics, job roles, income levels, and working conditions, enabling HR teams to gain actionable insights and implement effective retention strategies."
+                        data-tools="Power BI, Excel, DAX"
+                        >Details</button>
+                        <a href="HR-Analytics-Dashboard (2).pbix" target="_blank"
+                            class="project-link">Demo</a>
+                        <a href="https://github.com/praveengouda25/HR-Analytics-Dashboard.git" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-container"><img src="{{ url_for('static', filename='logo/netflix_forecaste_icon.jpg') }}" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Netflix Stock Price Forecaste</h3>
+                    <p class="Project-description">Developed a predictive model to forecast Netflix stock prices using
+                        historical market data. Implemented time series analysis with the ARIMA model to identify 
+                        trends and patterns in stock behavior. The project includes data preprocessing,
+                        visualization, model building, and performance evaluation</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                        data-aim="Develop a predictive model to forecast Netflix stock prices using historical market data."
+                        data-existing="Traditional stock analysis relies heavily on manual trend observation and basic statistical methods, which may not accurately capture complex patterns."
+                        data-proposed="A time series forecasting system using the ARIMA model to analyze historical stock prices and predict future trends, presented through clear visualizations in Python."
+                        data-tools="Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels">Details</button>
+                        <a href="https://github.com/praveengouda25/Netflix_Stock_Price_Forecaste.git" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- INSERT_YOUR_CODE -->
+            <!--<div class="Project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-container"><img src="logo/icons8-sales-94.png" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Sales Analysis of Vrindha Store</h3>
+                    <p class="Project-description">Sales data analyzed using Excel and Power BI to identify trends, top
+                        products, and regional performance. Interactive dashboards designed for better business
+                        insights.</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                            data-aim="Analyze sales data to provide actionable business insights and optimize performance strategies."
+                            data-existing="Manual sales reporting in spreadsheets is time-consuming and lacks interactive visualization capabilities for trend analysis."
+                            data-proposed="An integrated analysis system using Excel for data processing and Power BI for creating dynamic dashboards that reveal sales patterns, product performance, and regional insights."
+                            data-tools="Excel, Power BI">Details</button>
+                        <a href="https://ai-support-assistant.streamlit.app/" target="_blank"
+                            class="project-link">Demo</a>    
+                        <a href="https://github.com/Abdul24kadir/vrindha-store" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon-container"><img src="logo/icons8-communication-96.png" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Assistify: AI-Powered Communication Assistant</h3>
+                    <p class="Project-description">AI-powered assistant built with Python, Streamlit, SQLite and
+                        LangChain for task
+                        automation and natural language interaction. Integrates with APIs for enhanced functionality.
+                    </p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                            data-aim="Develop an AI-powered assistant to automate email triage and support ticket management for efficient customer communication."
+                            data-existing="Traditional email support systems require manual triage, leading to delays in response times and inefficient handling of customer queries."
+                            data-proposed="Assistify: A Streamlit-based AI assistant with IMAP/CSV integration, sentiment analysis, priority scoring, RAG pipeline (TF-IDF + cosine similarity), and an analytics dashboard for streamlined support operations."
+                            data-tools="Python, Streamlit, LangChain, SQLite, IMAP, TF-IDF, Cosine Similarity">Details</button>
+                        <a href="https://ai-support-assistant.streamlit.app/" target="_blank"
+                            class="project-link">Demo</a>
+                        <a href="https://github.com/Abdul24kadir/ai-support-assistant" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="icon-container"><img src="logo/icons8-law-94.png" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Supreme Court Judgement Search Engine</h3>
+                    <p class="Project-description">A full-stack legal search platform for retrieving Supreme Court
+                        judgments using Elasticsearch and FastAPI, achieving ~30% higher relevance and faster retrieval
+                        compared to MySQL FULLTEXT search.</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                            data-aim="Develop a full-stack search platform to efficiently retrieve relevant Supreme Court judgments from large legal corpora."
+                            data-existing="Traditional legal research methods and MySQL FULLTEXT search are slow and less accurate for large-scale judgment retrieval."
+                            data-proposed="A scalable search engine using Elasticsearch for full-text search with highlighted results, integrated with a FastAPI backend and a responsive HTML/CSS/JavaScript frontend."
+                            data-tools="HTML, CSS, JavaScript, Python, FastAPI, MySQL, Elasticsearch, Elastic Cloud">Details</button>
+                        <a href="https://abdul24kadir.github.io/sc-judgements-frontend/" target="_blank"
+                            class="project-link">Demo</a>
+                        <a href="https://github.com/Abdul24kadir/sc-judgements-frontend" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Project-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="icon-container"><img src="logo/icons8-web-94.png" class="Project-svg"></div>
+                <div class="Project-info">
+                    <h3 class="Project-title">Personal Portfolio-Old Design</h3>
+                    <p class="Project-description">A personal portfolio website built with HTML, CSS, and JavaScript to
+                        showcase projects, skills, and academic achievements with a clean, responsive layout and smooth
+                        navigation.</p>
+                    <div class="Project-buttons">
+                        <button class="theory-button"
+                            data-aim="Develop a personal portfolio website to showcase projects, skills, and academic achievements."
+                            data-existing="Traditional resumes lack interactive and visually engaging ways to present professional accomplishments."
+                            data-proposed="A responsive portfolio website using HTML, CSS, and JavaScript to create a professional online presence with engaging visuals and smooth navigation."
+                            data-tools="HTML, CSS, JavaScript">Details</button>
+                        <a href="https://mdabdulkadir.netlify.app/" target="_blank" class="project-link">Demo</a>
+                        <a href="https://github.com/Abdul24kadir/old-portfolio" target="_blank"
+                            class="project-link">Code</a>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <section id="experience" class="experience-container" data-aos="fade-up">
+        <h2 class="experience-title">Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3 class="experience-name">Data Science Intern <span>Intellipaat Software Solutions Pvt.Ltd</span></h3>
+                <div class="experience-buttons">
+                    <button class="experience-button" data-role="Data Science Intern"
+                        data-contributions="Contributed as a Machine Learning Intern at Intellipaat, where I worked on data preprocessing, exploratory data analysis (EDA), and building predictive models using supervised and unsupervised learning techniques. Implemented machine learning algorithms for real-world datasets, optimized model performance, and visualized insights through Python libraries. Collaborated with mentors to deploy ML workflows into projects, gaining hands-on experience in end-to-end model development and integration."
+                        data-skills="Python, SQL, Excel, Machine Learning, NumPy, Pandas, Scikit-learn, Generative AI ,LangChain, Claude, Gemini, AWS, Elastic Cloud, Flask, HTML5, CSS3"
+                        data-duration="December 2024 - May 2025" data-location="Bangalore, Karnataka, India"
+                        data-working-type="Hybrid">Details</button>
+                        <a href="https://drive.google.com/file/d/1XGw9mOoDkCz4cyrP4jGzu5ljrvPrnX9p/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                
+                 
+                 
+                </div>
+            </div>
+            <div class="experience-card">
+                <h3 class="experience-name">Data Analyst Intern <span>Elfinity Technologies Pvt</span></h3>
+                <div class="experience-buttons">
+                    <button class="experience-button" data-role="Data Analyst Intern"
+                        data-contributions="Engineered robust data preprocessing pipelines using NumPy, Pandas, and Scikit-learn, enabling seamless integration with downstream models; automated data validation and transformation workflows to improve quality, consistency, and efficiency across diverse datasets."
+                        data-skills="Python, NumPy, Pandas, Scikit-learn, Tableau, SQL"
+                        data-duration="June 2025 - Present"
+                        location="Bangalore"
+                        data-working-type="Hybrid">Details</button>
+                        <a href="https://drive.google.com/file/d/1U4saX0eOfSpbER6btLUnS9G4XUN3TL8C/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates-container" data-aos="fade-up">
+        <h2 class="certificates-title">Certificates</h2>
+        <div class="certificates-grid">          
+            <div class="certificate-card">
+                <h3 class="certificate-title">Python Training</h3>
+                <p class="certificate-desc">IIT INDORE, Intellipaat</p>
+                <div class="certificate-buttons">
+                    <a href="https://drive.google.com/file/d/1kyp647l-VTsPJELS10TozL2_wUeV5bhr/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">Professional Certificate Program in
+                    Artificial Intelligence & Data Science (PCP - AI&DS)</h3>
+                <p class="certificate-desc">IITI DRISHTI CPS FOUNDATION, IIT INDORE</p>
+                <div class="certificate-buttons">
+                    <a href="https://drive.google.com/file/d/12Tup3ySNBD6gSCOXognsUEpCCR5Jk95l/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                    
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">Research Paper Publication</h3>
+                <p class="certificate-desc">IRJMETS JOURNAL</p>
+                <div class="certificate-buttons">
+                    <a href="https://drive.google.com/file/d/1uIsBchO1ZJa_IBKjtQzgng99LCXNzU3Y/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                    <a href="https://drive.google.com/file/d/1EgnBCJmiDb0n87FdjZNRciny7eNyE_M8/view?usp=drive_link" target="_blank" class="certificate-button">Published Paper</a>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">BTI Hackathon Fest</h3>
+                <p class="certificate-desc">BTI College</p>
+                <div class="certificate-buttons">
+                    <a href="https://drive.google.com/file/d/1P8iBfXNYfSrkRHHZpF_ZhTOFYOyBAWYS/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">Microsoft SQL Certification</h3>
+                <p class="certificate-desc">IIT INDORE, Intellipaat</p>
+                <div class="certificate-buttons">
+                    <a href="https://drive.google.com/file/d/1l82Fee0siHO25lTTKv19SNWZqZr8YPIw/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">Python Project Development</h3>
+                <p class="certificate-desc">Udemy, 2024</p>
+                <div class="certificate-buttons">
+                    <a href="https://drive.google.com/file/d/1adWkzZV5mo3KRyS3G6ic_tZtVhRnKE71/view?usp=drive_link" target="_blank" class="certificate-button">View Certificate</a> 
+                </div>
+            </div>
+           <!-- <div class="certificate-card">
+                <h3 class="certificate-title">Python</h3>
+                <p class="certificate-desc">Great Learning, 2024</p>
+                <div class="certificate-buttons">
+                    <button class="certificate-button" disabled>Certificate</button>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">Power BI Job Simulation</h3>
+                <p class="certificate-desc">PWC-Forage, 2024</p>
+                <div class="certificate-buttons">
+                    <button class="certificate-button" disabled>Certificate</button>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <h3 class="certificate-title">Project Management</h3>
+                <p class="certificate-desc">Wipro, 2024</p>
+                <div class="certificate-buttons">
+                    <button class="certificate-button" disabled>Certificate</button>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-container" data-aos="fade-up">
+        <h2 class="contact-title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="{{ url_for('static', filename='logo/contact.png') }}" class="light-img" alt="Contact Image">
+                <img src="{{ url_for('static', filename='logo/contactme.png') }}" class="dark-img" alt="Contact Image">
+            </div>
+            <form class="form-container" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required class="input_">
+                <input type="email" name="email" placeholder="Your Email" required class="input_">
+                <input type="tel" name="phone" placeholder="Phone" class="input_">
+                <textarea name="message" placeholder="Your Message" rows="5" required class="input_"></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            <div id="messageAlert" class="message-alert" style="display: none;"></div>
+        </div>
+    </section>
+
+
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="footer-top">
+                <a href="#" class="logo-text">Praveen Kumar</a>
+                <p>Code. Create. Innovate.</p>
+                <p>Thank you for visiting my portfolio website. I look forward to connecting with you on my social platforms and collaborating on innovative opportunities 🚀.
+                </p>
+            </div>
+            <div class="footer-grid">
+                <h3 class="footer-grid-heading">Quick Links</h3>
+                <div class="footer-links-list">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#certificates" class="footer-link">Certificates</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3 class="footer-grid-heading">Contact Info</h3>
+                <a href="tel:+91 8618097974" class="ph-num">+91 XXX-XXX-XXXX</a>
+                <p>praveengoudru25@gmail.com</p>
+                <p>Bangalore, Karnataka, India - 560035</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/praveen-kumar-bcc2525/" target="_blank">
+                        <img src="{{ url_for('static', filename='images/linkedin.svg') }}" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="mailto:praveengoudru25@gmail.com" target="_blank"><img
+                            src="{{ url_for('static', filename='logo/icons8-gmail (1).svg') }}" alt="Gmail" class="social-icon">
+                    </a>
+                    <a href="https://github.com/praveengouda25" target="_blank"><img src="{{ url_for('static', filename='images/github.svg') }}" alt="GitHub"
+                            class="social-icon"></a>
+                    <a href="https://www.instagram.com/praveeng_25?igsh=dHpobm05cTdzMG9p" target="_blank"><img
+                            src="{{ url_for('static', filename='images/instagram.svg') }}" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2025 - Present Praveen. All rights reserved.</p>
+    </footer>
+
+    <div id="project-popup">
+        <div class="popup-content">
+            <!-- Content will be dynamically populated by JavaScript -->
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{{ url_for('static', filename='j.js') }}"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'982a33d70fdba857',t:'MTc1ODQ2NDQxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
