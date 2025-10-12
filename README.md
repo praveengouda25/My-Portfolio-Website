@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+## My-Portfolio-Website
 # Portfolio Enhancement - Complete Setup Guide
 
 ## Overview
