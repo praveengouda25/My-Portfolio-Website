@@ -17,8 +17,8 @@ def test_email():
     """Test email sending functionality"""
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
-    MAIL_USERNAME = os.environ.get('EMAIL_USER', 'captaing250000@gmail.com')
-    MAIL_PASSWORD = os.environ.get('EMAIL_PASS', 'okmv lpsg xmld ywlt')
+    MAIL_USERNAME = os.environ.get('EMAIL_USER', 'praveengoudru25@gmail.com')
+    MAIL_PASSWORD = os.environ.get('EMAIL_PASS', 'vyie yryt zqbb phpv')
     
     if not MAIL_USERNAME or not MAIL_PASSWORD:
         print("❌ Error: EMAIL_USER and EMAIL_PASS must be set in .env file")
