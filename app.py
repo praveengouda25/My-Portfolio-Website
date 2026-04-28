@@ -14,8 +14,8 @@ app.secret_key = os.environ.get('SECRET_KEY', '34658454b0712710dc3e84e6bcdf7c5b8
 # Email configuration
 MAIL_SERVER = 'smtp.gmail.com'
 MAIL_PORT = 587
-MAIL_USERNAME = os.environ.get('EMAIL_USER', 'captaing250000@gmail.com')
-MAIL_PASSWORD = os.environ.get('EMAIL_PASS', 'okmv lpsg xmld ywlt')
+MAIL_USERNAME = os.environ.get('EMAIL_USER', 'praveengoudru25@gmail.com')
+MAIL_PASSWORD = os.environ.get('EMAIL_PASS', 'vyie yryt zqbb phpv')
 MAIL_USE_TLS = True
 
 def send_email(name, email, phone, message):
